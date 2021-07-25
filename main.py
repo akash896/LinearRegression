@@ -1,3 +1,5 @@
+# Predicting Diabetes value of a person using one feature(bmi) of all features
+
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import datasets, linear_model
@@ -44,10 +46,10 @@ diabetes_y_predicted = model.predict(diabetes_X_test)
 print("Predicted value = ", diabetes_y_predicted)
 print("Actual value = ", diabetes_y_test)
 
-
 print("Mean Squared Error = ", mean_squared_error(diabetes_y_test, diabetes_y_predicted))
 print("Weights = ", model.coef_)
 print("Intercept = ", model.intercept_)
+
 plt.scatter(diabetes_X_test, diabetes_y_test)
 plt.plot(diabetes_X_test, diabetes_y_predicted)
 plt.show()
