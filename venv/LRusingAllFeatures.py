@@ -47,5 +47,5 @@ print("Predicted value = ", diabetes_y_predicted)
 print("Actual value = ", diabetes_y_test)
 
 print("Mean Squared Error = ", mean_squared_error(diabetes_y_test, diabetes_y_predicted))
-print("Weights = ", model.coef_)
-print("Intercept = ", model.intercept_)
+print("Predicted Parameters Theta = ", model.coef_)
+print("Intercept Theta0 = ", model.intercept_)
